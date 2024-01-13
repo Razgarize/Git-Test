@@ -10,6 +10,16 @@ int sum(int n)
   return sum;
 }
 
+int product(int n)
+{
+  int product = 1;
+  for(int i = 1; i <= n; i++)
+    {
+      product *= i;
+    }
+  return product;
+}
+
 int main()
 {
   //setup
@@ -17,9 +27,9 @@ int main()
   //input
   std::cout << "input a integer: ";
   std::cin >> n;
-  //process
-  std::cout << sum(n);
-  
+  //process and output
+  std::cout << sum(n) << std::endl;
+  std::cout << product(n);
   
   return 0;
 }
